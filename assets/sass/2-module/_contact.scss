@@ -1,0 +1,30 @@
+.contact {
+  &__area {
+    position: relative;
+    background-color: #f3eaeb;
+    border-radius: 15px;
+    padding: 10px;
+    @include md-screen {
+      padding: 30px;
+    }
+    @include lg-screen {
+      padding: 50px;
+    }
+    &-shade {
+      display: none;
+      position: absolute;
+      bottom: 10px;
+      left: 50px;
+      @include lg-screen {
+        display: block;
+      }
+    }
+  }
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #bb9297;
+  background: transparent;
+}

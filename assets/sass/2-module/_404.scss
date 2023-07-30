@@ -1,0 +1,12 @@
+.page-404 {
+  &__bg {
+    width: 100%;
+    background: linear-gradient(
+      -45deg,
+      #dbf8ff,
+      #f1fdfb,
+      rgba(255, 192, 219, 0.5)
+    );
+    overflow: hidden;
+  }
+}

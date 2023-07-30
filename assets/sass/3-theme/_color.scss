@@ -1,0 +1,59 @@
+.primary {
+  color: $primary;
+}
+.secondary {
+  color: $secondary;
+}
+.text {
+  color: $text;
+}
+.heading-text {
+  color: $heading-text;
+}
+.bg-color {
+  background-color: $bg-lighter;
+}
+.text-gray {
+  color: $text-gray;
+}
+.text-white {
+  color: $white;
+  img {
+    transform: translateY(-5px);
+  }
+  &__2 {
+    position: relative;
+    img {
+      margin-left: 5px;
+      transform: translateY(-3px);
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: 40%;
+      height: 1px;
+      top: 50%;
+      left: 0%;
+      position: relative;
+      background-color: #38474f;
+      @include md-screen {
+        left: -0%;
+        width: 43%;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 40%;
+      height: 1px;
+      top: -41%;
+      right: -60%;
+      position: relative;
+      background-color: #38474f;
+      @include md-screen {
+        right: -57%;
+        width: 43%;
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  font-family: $body-font;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $text;
+  overflow-x: hidden;
+}
+
+p {
+  color: $text;
+  font-size: 12px;
+  line-height: none;
+  @include md-screen {
+    margin-bottom: 1.25rem;
+    font-size: 14px;
+  }
+  @include md-screen {
+    font-size: 16px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto+Slab:wght@700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.9rem 0 0.6rem;
+  text-transform: capitalize;
+
+  @include md-screen {
+    margin: 1.2rem 0 0.8rem;
+  }
+  font-family: $heading-font;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $heading-text;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.56rem; //40.96px
+  font-weight: 800;
+
+  @include md-screen {
+    font-size: 3.2rem; //51.2px
+    font-weight: 700;
+  }
+  @include xl-screen {
+    font-size: 4rem; //64px
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-size: 1.8rem; //28.8px
+  @include md-screen {
+    font-size: 2rem; //38.4px
+  }
+  @include xl-screen {
+    font-size: 2.5rem; //48px
+  }
+}
+
+h3 {
+  font-size: 1.125rem; //18px
+  @include md-screen {
+    font-size: 1.5rem; //24px
+  }
+  @include xl-screen {
+    font-size: 2.25rem; //30px
+  }
+}
+
+h4 {
+  font-size: 1.4rem; //17px
+  font-weight: 500;
+  @include md-screen {
+    font-size: 1.5rem; //19.2px
+    font-weight: 500;
+  }
+  @include xl-screen {
+    font-size: 1.8rem; //24px
+    font-weight: 500;
+  }
+}
+h5 {
+  font-size: 1.05rem; //16.8px
+  @include md-screen {
+    font-size: 1.1rem; //17.6px
+  }
+  @include xl-screen {
+    font-size: 1.25rem; //20px
+  }
+}
+
+h6 {
+  font-size: 1rem; //16px
+  font-weight: 700;
+  color: $heading-text;
+  font-family: $heading-font;
+  line-height: 1.2;
+  @include md-screen {
+    font-size: 1.05rem; //16.8px
+  }
+  @include xl-screen {
+    font-size: 1.125rem; //18px
+  }
+}
+
+li {
+  margin-bottom: 10px;
+  a {
+    color: $text;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+small,
+.xsm-text {
+  font-size: 12px;
+}
+.xsm-text-1 {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.sm-text {
+  font-size: 14px;
+}
+.lg-text {
+  font-size: 14px;
+  @include md-screen {
+    font-size: 16px;
+  }
+  @include lg-screen {
+    font-size: 18px;
+  }
+}
+.xlg-text {
+  font-size: 20px;
+}
+.xxlg-text {
+  font-size: 24px;
+}
+.xxxl-text {
+  font-size: 30px;
+}

@@ -1,0 +1,50 @@
+.license-menu {
+  &__bg {
+    background-image: url(/assets/img/Banner-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      margin-top: 0;
+      font-size: 2.56rem; //40.96px
+      font-weight: 500;
+      top: 0%;
+      @include md-screen {
+        font-size: 3.2rem; //51.2px
+        font-weight: 700;
+      }
+      @include xl-screen {
+        font-size: 4rem; //64px
+        font-weight: 700;
+      }
+    }
+  }
+}
+.license {
+  input {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    width: 70%;
+    &::placeholder {
+      color: #bdbdbd;
+    }
+  }
+}
+.license-2 {
+  input {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+  }
+}

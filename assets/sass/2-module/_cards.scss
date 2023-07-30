@@ -1,0 +1,96 @@
+.cards {
+  .logo {
+    position: relative;
+    font-size: 30px;
+    &__bg {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -150%;
+      z-index: -999;
+    }
+    &-1 {
+      color: $primary;
+    }
+    &-2 {
+      color: #6db0c3;
+    }
+    &-3 {
+      color: #f2bb9f;
+    }
+    &-4 {
+      color: #b49df0;
+    }
+  }
+}
+.blog-card {
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  img {
+    border-radius: 20px;
+  }
+  @include md-screen {
+    padding: 30px;
+  }
+  @include lg-screen {
+    padding: 50px;
+  }
+}
+.more-blog {
+  position: relative;
+  z-index: 1;
+
+  img {
+    transform: translateY(-10px);
+  }
+  &-content {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    top: -20%;
+    left: 30%;
+    @include md-screen {
+      top: -20%;
+      left: 25%;
+    }
+    @include lg-screen {
+      top: -20px;
+      left: 60px;
+    }
+    @include xl-screen {
+      top: -15px;
+      left: 110px;
+    }
+    @include xli-screen {
+      top: -15px;
+      left: 150px;
+    }
+    h4 {
+      font-size: 1.25rem; //17px
+      font-weight: 300;
+      @include md-screen {
+        font-size: 1.5rem; //19.2px
+        font-weight: 300;
+      }
+      @include xl-screen {
+        font-size: 1.8rem; //24px
+        font-weight: 300;
+      }
+    }
+  }
+  &__bg {
+    position: absolute;
+    display: block;
+    top: -60px;
+    left: 30px;
+    z-index: -1;
+
+    @include xl-screen {
+      left: 10%;
+    }
+    @include xli-screen {
+      left: 15%;
+    }
+  }
+}

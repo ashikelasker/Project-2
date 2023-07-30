@@ -1,0 +1,17 @@
+.blog {
+  background-color: #f2f6f7;
+  &__bg {
+    background-image: url(/assets/img/blog-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-content {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

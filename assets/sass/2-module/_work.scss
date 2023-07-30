@@ -1,0 +1,60 @@
+.work {
+  background-color: #efeeee;
+  border-radius: 15px;
+}
+.content-area {
+  position: relative;
+  border-radius: 15px;
+  img {
+    border-radius: 15px;
+  }
+  &__1 {
+    background-color: #ece6e7;
+  }
+  &__2 {
+    background-color: #e0e8ea;
+    padding: 0;
+  }
+  &__3 {
+    background-color: #eee6e1;
+    padding-top: px;
+  }
+  &__4 {
+    background-color: #ebe1e6;
+    padding-top: px;
+  }
+}
+.image {
+  &-feature {
+    z-index: 999;
+  }
+  &-properland {
+    position: relative;
+    z-index: 999;
+    &__pattern {
+      display: none;
+      position: absolute;
+      top: -24%;
+      right: -13%;
+      z-index: -999;
+      @include lg-screen {
+        display: block;
+      }
+      @include xl-screen {
+        top: -20%;
+        right: -11%;
+      }
+    }
+    &__pattern-2 {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      z-index: -999;
+
+      @include lg-screen {
+        display: block;
+      }
+    }
+  }
+}

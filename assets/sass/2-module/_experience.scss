@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  &__experience {
+    color: $primary;
+    font-size: 70px;
+    font-weight: 700;
+    margin-right: 20px;
+  }
+  &__area {
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+}

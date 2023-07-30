@@ -1,0 +1,84 @@
+.t-link {
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &--primary {
+    color: $heading-text;
+    &:hover {
+      color: $primary;
+    }
+  }
+  &-primary {
+    color: $primary;
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &--fb {
+    color: $fb;
+    &:hover {
+      color: $fb;
+    }
+  }
+  &--tw {
+    color: $tw;
+    &:hover {
+      color: $tw;
+    }
+  }
+  &--ins {
+    color: $ins;
+    &:hover {
+      color: $ins;
+    }
+  }
+  &--in {
+    color: $in;
+    &:hover {
+      color: $in;
+    }
+  }
+  &--be {
+    color: $be;
+    &:hover {
+      color: $be;
+    }
+  }
+}
+.t-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.social-list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  &__item {
+    margin-right: 5px;
+  }
+}
+.social-icon {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1;
+  color: #374a5e;
+  &--alpha {
+    background: $white;
+    &:hover {
+      color: $primary;
+      background: transparent;
+    }
+  }
+}
